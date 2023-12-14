@@ -5,10 +5,10 @@ import { NavLink, useLocation } from "react-router-dom";
 export default function Content(props) {
   const { routes } = props;
   let currentlocation = useLocation();
-  let activeColor = useColorModeValue("gray.700", "white");
+  let activeColor = useColorModeValue("black", "blue");
 
-  let activeIcon = useColorModeValue("gray.700", "white");
-  let textColor = useColorModeValue("lightblue.100", "lightpeach.100");
+  let activeIcon = useColorModeValue("black", "blue");
+  let textColor = useColorModeValue("blue", "white");
 
   const activeRoute = (routeName) => {
     return currentlocation.pathname.includes(routeName);

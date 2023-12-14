@@ -16,13 +16,13 @@ export const buttonStyles = {
       },
       variants: {
         darkBrand: (props) => ({
-          bg: mode("lightblue.100", "lightpeach.100")(props),
-          color: mode("white", "black")(props),
+          bg: mode("lightblue.100", "black")(props),
+          color: mode("white", "white")(props),
           _active: {
             bg: mode("lightpeach.100", "lightblue.100")(props)
           },
           _hover: {
-            bg: mode("lightpeach.100", "lightblue.100")(props)
+            bg: mode("black", "lightblue.100")(props)
           }
         })
       }

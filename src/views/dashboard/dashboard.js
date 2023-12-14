@@ -21,8 +21,8 @@ export default function Dashboard() {
   const [quote, setQuote] = useState("");
   const styles = useStyleConfig("Card");
 
-  let highlightTextColor = useColorModeValue("blue", "black");
-  let textColor = useColorModeValue("gray", "black");
+  let highlightTextColor = useColorModeValue("black", "blue");
+  let textColor = useColorModeValue("blue", "black");
 
   const getActiveRoute = (routes) => {
     for (let i = 0; i < routes.length; i++) {

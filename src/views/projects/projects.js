@@ -9,13 +9,10 @@ import {
 import routes from "../../routes";
 import Navbar from "../../components/Navbar/Navbar";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import nftproject from "../../assets/projects/nft_blockchain_500x300.jpg";
-import medhub from "../../assets/projects/medhub_500x300.jpg";
-import collab from "../../assets/projects/lets_collab_img3.jpg";
-import blog from "../../assets/projects/bloggers.jpg";
-import eeg from "../../assets/projects/eeg_500x300.jpg";
-import mtrans from "../../assets/projects/mt_500x300.jpg";
-import steg from "../../assets/projects/steg_500x300.jpeg";
+import sarvang from "../../assets/projects/Sarvanga.png";
+import eyes from "../../assets/projects/CCTV.png";
+import maversesynergy from "../../assets/projects/Mavers.png";
+import aim from "../../assets/projects/AimConstruction.png";
 
 export default function Projects() {
   const textColorPrimary = useColorModeValue(
@@ -47,7 +44,7 @@ export default function Projects() {
           justifyContent="center"
         >
           <ProjectCard
-            projectImage={nftproject}
+            projectImage={sarvang}
             projectName={"Simple Static Website"}
             aboutProject={"Therapy website used for marketing "}
             techStack={"EXPRESS JS, NODE JS, REACT JS, MONGODB, HTML5, ThailwindCSS, CSS, JavaScript"}
@@ -55,7 +52,7 @@ export default function Projects() {
             projectLink="https://github.com/manuvini/clout"
           />
           <ProjectCard
-            projectImage={collab}
+            projectImage={maversesynergy}
             projectName={"Educational based Website"}
             aboutProject={"A Realtime Website used for marketing"}
             techStack={"EXPRESS JS, NODE JS, REACT JS, MONGODB, HTML5, CSS, JavaScript"}
@@ -63,7 +60,7 @@ export default function Projects() {
             projectLink="https://github.com/Prashu-git/maversesynergy"
           />
           <ProjectCard
-            projectImage={medhub}
+            projectImage={eyes}
             projectName={"CCTV"}
             aboutProject={ "Official website for the clint" }
             techStack={
@@ -72,7 +69,7 @@ export default function Projects() {
             projectLink="https://github.com/Prashu-git/cctv"
           />
           <ProjectCard
-            projectImage={blog}
+            projectImage={aim}
             projectName={"Construction Website"}
             aboutProject={"Construction of any type of projects in the industary"}
             techStack={"HTML5, CSS, JavaScript, Java, MySQL"}

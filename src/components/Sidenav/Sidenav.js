@@ -109,8 +109,8 @@ export default function Sidenav(props) {
 
 export function SideNavResponsive(props) {
   const { colorMode } = useColorMode();
-  let sidenavBg = useColorModeValue("white", "navyBlue.300");
-  let navbarBorderColor = useColorModeValue("lightblue.100", "lightpeach.100");
+  let sidenavBg = useColorModeValue("white", "black");
+  let navbarBorderColor = useColorModeValue("black", "white");
   let variantChange = "0.2s linear";
   let shadow = useColorModeValue(
     "14px 17px 40px 4px rgba(112, 144, 176, 0.08)",

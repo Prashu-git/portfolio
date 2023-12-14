@@ -35,7 +35,7 @@ export default function Resume() {
               title="Resume"
               width="100%"
               height="100%"
-              style={{ border: "5px solid" }}
+              style={{ border: "5px solid", color: "black" }}
               loading="lazy"
             ></iframe>
           </Box>

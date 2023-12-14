@@ -118,7 +118,7 @@ export default function Contact() {
               </Box>
               <Text textAlign="center">CONTACT ME @</Text>
               <Text color={textColorPrimary} textAlign="center" mt="5px">
-                (+91)-8496945779
+                +91 8496945779
               </Text>
             </Box>
           </Flex>

@@ -20,7 +20,7 @@ export default function ProjectCard(props) {
     projectLiveLink,
     projectLink
   } = props;
-  const textColor = useColorModeValue("navy.700", "lightpeach.100");
+  const textColor = useColorModeValue("blue", "black");
   const styles = useStyleConfig("Card");
   return (
     <Box
@@ -66,7 +66,7 @@ export default function ProjectCard(props) {
         </Flex>
         <Flex direction="row" align="center" justify="Center">
           <Text
-            color="secondaryGray.500"
+            color="black"
             fontSize={{
               base: "sm"
             }}
