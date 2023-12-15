@@ -13,6 +13,7 @@ import {
   Link
 } from "@chakra-ui/react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import myphoto from "../../assets/aboutMePhoto.jpeg";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { MdFlightTakeoff } from "react-icons/md";
 import { LiaDrumSolid } from "react-icons/lia";
@@ -21,20 +22,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import routes from "../../routes";
 import TechStackCard from "../../components/techStackCard/techStackCard";
 import AboutMeInfo from "../../components/aboutMeInfo/aboutMeInfo";
-import angular from "../../assets/icons/angular.svg";
-import typescript from "../../assets/icons/typescript.svg";
-import node from "../../assets/icons/nodejs.svg";
-import mongo from "../../assets/icons/mongodb.svg";
-import js from "../../assets/icons/javascript.svg";
-import react from "../../assets/icons/react.svg";
-import html from "../../assets/icons/html.svg";
-import css from "../../assets/icons/css3.svg";
-import git from "../../assets/icons/git.svg";
-import gitlab from "../../assets/icons/gitlab.svg";
-import cpp from "../../assets/icons/c++.png";
-import express from "../../assets/icons/express.svg";
-import myphoto from "../../assets/aboutMePhoto.jpg";
-import GitHubCalendar from "react-github-calendar";
+
 
 export default function About() {
   const styles = useStyleConfig("Card");
@@ -97,14 +85,14 @@ export default function About() {
                 transform="rotate(4deg)"
               // zIndex="-1"
               />
-              {/* <LazyLoadImage
+              <LazyLoadImage
                 src={myphoto}
                 width="100%"
                 height="100%"
                 alt="Image Alt"
                 effect="blur"
                 style={{ height: "100%" }}
-              /> */}
+              />
             </Box>
             <Flex
               direction="column"
@@ -141,11 +129,11 @@ export default function About() {
                     title="Education"
                     value="Don Bosco Institute Of Technology, Bengaluru "
                   />
-                  {/* <AboutMeInfo
+                  <AboutMeInfo
                     boxShadow={cardShadow}
                     title="Degree"
-                    value="Masters"
-                  /> */}
+                    value="Bachelor of Engineering"
+                  />
                   <AboutMeInfo
                     boxShadow={cardShadow}
                     title="Languages"
