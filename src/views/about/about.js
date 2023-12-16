@@ -6,27 +6,26 @@ import {
   Grid,
   useStyleConfig,
   Text,
-  useColorModeValue,
-  useColorMode,
   Icon,
-  Button,
-  Link
+  useColorModeValue,
+  // useColorMode,
+
 } from "@chakra-ui/react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import myphoto from "../../assets/aboutMePhoto.jpeg";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { MdFlightTakeoff } from "react-icons/md";
-import { LiaDrumSolid } from "react-icons/lia";
-import { GiCricketBat } from "react-icons/gi";
 import Navbar from "../../components/Navbar/Navbar";
 import routes from "../../routes";
-import TechStackCard from "../../components/techStackCard/techStackCard";
 import AboutMeInfo from "../../components/aboutMeInfo/aboutMeInfo";
+import { FaWalking } from "react-icons/fa";
+import { FaVolleyballBall } from "react-icons/fa";
+import { FaNewspaper } from "react-icons/fa";
+
 
 
 export default function About() {
   const styles = useStyleConfig("Card");
-  const { colorMode } = useColorMode();
+  // const { colorMode } = useColorMode();
   const textColorPrimary = useColorModeValue("blue", "white");
   const cardShadow = useColorModeValue(
     "0px 18px 40px rgba(112, 144, 176, 0.12)",
@@ -51,11 +50,7 @@ export default function About() {
           alignItems="center"
           mb="40px"
         >
-          {/* <TypeAnimation
-            sequence={["ABOUT ME", 500, "ABOUT", 500, "ABOUT ME", 500]}
-            style={{ fontSize: "3em" }}
-            cursor={false}
-          /> */}
+
           <Grid
             templateColumns={{
               base: "1fr",
@@ -83,7 +78,6 @@ export default function About() {
                 height="100%"
                 bg={textColorPrimary}
                 transform="rotate(4deg)"
-              // zIndex="-1"
               />
               <LazyLoadImage
                 src={myphoto}
@@ -109,16 +103,7 @@ export default function About() {
                   {"<GENERAL INFORMATION/>"}
                 </Text>
                 <SimpleGrid columns="2" gap="20px">
-                  {/* <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Current Organization"
-                    value="Truminds Software Systems"
-                  /> */}
-                  {/* <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Designation"
-                    value="Software Development Engineer - 1"
-                  /> */}
+                  
                   <AboutMeInfo
                     boxShadow={cardShadow}
                     title="Location"
@@ -137,84 +122,12 @@ export default function About() {
                   <AboutMeInfo
                     boxShadow={cardShadow}
                     title="Languages"
-                    value="Kannada, English, Hindi"
-                  />
+                    value={<span> <strong>ಕನ್ನಡ</strong> ,English, <strong>हिंदी</strong></span>}
+                    />
                 </SimpleGrid>
               </Box>
             </Flex>
           </Grid>
-        </Flex>
-
-        {/* <Flex
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          mb="40px"
-        > */}
-          {/* <Text color={textColorPrimary} fontSize="2em" textAlign="center">
-            {"<MY SKILLSET/>"}
-          </Text> */}
-        {/* </Flex> */}
-        {/* <SimpleGrid
-          columns={{ base: 2, md: 2, lg: 3, xl: 6, "2xl": 6 }}
-          gap="20px"
-          mb="20px"
-          align={{ base: "center", xl: "center" }}
-          justify={{ base: "center", xl: "center" }}
-        >
-          <TechStackCard imagepath={angular} />
-          <TechStackCard imagepath={react} />
-          <TechStackCard imagepath={js} />
-          <TechStackCard imagepath={typescript} />
-          <TechStackCard imagepath={cpp} />
-          <TechStackCard imagepath={node} />
-          <TechStackCard imagepath={mongo} />
-          <TechStackCard imagepath={express} background="white" />
-          <TechStackCard imagepath={git} />
-          <TechStackCard imagepath={gitlab} />
-          <TechStackCard imagepath={html} />
-          <TechStackCard imagepath={css} />
-        </SimpleGrid>
-
-        <Flex
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          mb="40px"
-          mt="40px"
-        > */}
-          {/* <Text color={textColorPrimary} fontSize="2em" textAlign="center">
-            {"<MY GITHUB CONTRIBUTIONS/>"}
-          </Text> */}
-        {/* </Flex> */}
-        {/* <Box display="flex" justifyContent="center" alignItems="center">
-          <GitHubCalendar
-            username="pkjb8"
-            colorScheme={colorMode === "light" ? "light" : "dark"}
-            year="last"
-          />
-        </Box>
-        <Flex justifyContent="center" alignItems="center" mt="20px">
-          {colorMode === "light" ? (
-            <LazyLoadImage
-              src="https://github-readme-streak-stats.herokuapp.com?user=Rahul1582&theme=whatsapp-light&hide_border=true&border_radius=5.8&date_format=j%20M%5B%20Y%5D"
-              alt="GitHub Streak"
-              effect="blur"
-            />
-          ) : (
-            <LazyLoadImage
-              src="https://github-readme-streak-stats.herokuapp.com?user=Rahul1582&theme=calm-pink&hide_border=true&border_radius=5.8&date_format=j%20M%5B%20Y%5D"
-              alt="GitHub Streak"
-              effect="blur"
-            />
-          )}
-        </Flex>
-        <Flex justifyContent="center" alignItems="center" mt="20px">
-          <Link href="https://github.com/" target="blank">
-            <Button variant="darkBrand" fontSize="sm" fontFamily="DM Sans">
-              Visit Github
-            </Button>
-          </Link>
         </Flex>
         <Flex
           direction="row"
@@ -234,61 +147,53 @@ export default function About() {
           align={{ base: "center", xl: "center" }}
           justify={{ base: "center", xl: "center" }}
         >
+
+<Box __css={styles}>
+            <Box textAlign="center">
+              <Icon
+                as={FaVolleyballBall}
+                width="30px"
+                height="30px"
+                color="inherit"
+              />
+            </Box>
+            <Text textAlign="center">Playing Sports</Text>
+            <Text color={"black"} textAlign="center" mt="5px">
+            Engaging in sports isn't just about physical activity, it's a holistic experience that shapes character, fosters teamwork, and cultivates resilience. Through the rhythm of each game, I've learned the art of discipline, honed my skills, and embraced the essence of fair play. Sports have been my canvas for personal growth, teaching me the value of perseverance in the face of challenges and the joy of celebrating victories, big or small. It's not just about winning; it's about the camaraderie, the thrill of the game, and the lessons learned both on and off the field.
+            </Text>
+          </Box>
           <Box __css={styles}>
             <Box textAlign="center">
               <Icon
-                as={MdFlightTakeoff}
+                as={FaWalking}
                 width="30px"
                 height="30px"
                 color="inherit"
               />
             </Box>
             <Text textAlign="center">Travelling & Exploring</Text>
-            <Text color={textColorPrimary} textAlign="center" mt="5px">
-              I love exploring new places and learning new things, whether they're nearby or far away, easy or challenging. It's thrilling to uncover hidden spots, savor diverse cuisines, and immerse myself in various cultures. Traveling constantly teaches me valuable lessons, broadening my horizons. Life, to me, is an ongoing journey of learning, embracing not only technology but also understanding different cultures, traditions, and the rich tapestry of the world. Each experience adds depth and color to the canvas of my life.
-            </Text>
+            <Text color={"black"} textAlign="center" mt="5px">
+            Traveling and exploring are the threads that weave the fabric of my adventures. Each journey is an odyssey, an opportunity to learn cultures, and experiences.  Traveling fuels my curiosity, broadens my horizons and teaches me the art of adaptation. It's not just about visiting places; it's about immersing me in diverse traditions and connecting with people. Exploring isn't merely a hobby, it's a mindset a perpetual quest for new perspectives and a continuous celebration of the world's myriad treasures.   
+                                 </Text>
           </Box>
           <Box __css={styles}>
             <Box textAlign="center">
               <Icon
-                as={LiaDrumSolid}
+                as={FaNewspaper}
                 width="30px"
                 height="30px"
                 color="inherit"
               />
             </Box>
-            <Text textAlign="center">Playing Drums</Text>
-            <Text color={textColorPrimary} textAlign="center" mt="5px">
-              I have a deep passion for playing the drums, which has been a
-              cherished hobby of mine for many years. The rhythmic beats and the
-              feeling of being in sync with the music provide me with a sense of
-              joy and creative expression that is truly unparalleled. Whether
-              it's jamming with friends, exploring new techniques, or simply
-              drumming to my favorite tunes, I find immense fulfillment and
-              relaxation in this musical pursuit!!
+            <Text textAlign="center">Reading</Text>
+            <Text color={"black"} textAlign="center" mt="5px">
+            Diving into the pages of a book is a timeless voyage, a journey that transcends time and space. For me, reading isn't just a pastime; it's an understanding of the world. With each turn of the page, I traverse realms unknown and delve into the depths of human emotions. Books aren't mere collections of words; they are portals to infinite knowledge, empathy, and inspiration. It's not just about the stories within the pages; it's about the transformative power of words that resonate long after the book is closed.
             </Text>
           </Box>
-          <Box __css={styles}>
-            <Box textAlign="center">
-              <Icon
-                as={GiCricketBat}
-                width="30px"
-                height="30px"
-                color="inherit"
-              />
-            </Box>
-            <Text textAlign="center">Playing Outdoor Games</Text>
-            <Text color={textColorPrimary} textAlign="center" mt="5px">
-              Whether it's a competitive game of soccer, a relaxing round of
-              golf, or simply throwing a frisbee in the park, I find immense joy
-              and fulfillment in the great outdoors. Playing sports not only
-              keeps me physically active but also fosters teamwork, leadership,
-              and a strong sense of camaraderie. It's a wonderful way for me to
-              unwind, stay fit, and connect with friends and family while
-              enjoying the beauty of nature!!
-            </Text>
-          </Box> */}
-        {/* </SimpleGrid> */}
+          
+        </SimpleGrid>
+
+
       </Box>
     </Box>
   );

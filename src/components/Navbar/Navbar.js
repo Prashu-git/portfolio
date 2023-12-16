@@ -89,8 +89,8 @@ export default function Navbar(props) {
             _focus={{
               boxShadow: "none"
             }}
-            // borderBottom="2px solid"
-            // borderColor={navbarBorderColor}
+          // borderBottom="2px solid"
+          // borderColor={navbarBorderColor}
           >
             {displayText}
           </Link>

@@ -14,7 +14,6 @@ import dashboardimg from "../../assets/dashboard.gif";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import Typewriter from "typewriter-effect";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Dashboard() {
@@ -78,7 +77,7 @@ export default function Dashboard() {
                     fontWeight="bold"
                     color={textColor}
                   >
-                    Hello !! 🙋🏻‍♂️
+                    Hello !! 
                   </Text>
 
                   <Text
@@ -118,31 +117,27 @@ export default function Dashboard() {
         </Flex>
 
         <Flex direction="column" justifyContent="center" alignItems="center">
-          <Box
-            __css={styles}
-            border="none"
-            textAlign="center"
-            cursor="default"
-            mt="20px"
-          >
-            Random Quote
-            <Box
-              fontSize={{ sm: "1em", md: "1.3em", xl: "1.3em" }}
-              color={highlightTextColor}
-              cursor="default"
-            >
-              {quote ? (
-                <Typewriter
-                  onInit={(typewriter) => {
-                    typewriter.typeString(quote).start();
-                  }}
-                />
-              ) : (
-                <span>|</span>
-              )}
-            </Box>
-          </Box>
-        </Flex>
+  <Box
+    __css={styles}
+    border="none"
+    textAlign="center"
+    cursor="default"
+    mt="20px"
+  >
+    {/* Dummy Text */}
+    <Box
+      fontSize={{ sm: "1em", md: "1.3em", xl: "1.3em" }}
+      color={"black"}
+      cursor="default"
+    >
+      
+      <p  >
+      Hello! I'm Prashanth, a developer based in Bangalore, India. My enthusiasm for learning is boundless—I thrive on exploring new technologies and methodologies to remain at the industry's forefront. Collaboration and teamwork are my driving forces. I deeply value personal projects, whether they involve contributing to open source initiatives or working on my own tech ventures. I'm eager to contribute my skills and dedication to the dynamic tech landscape. Let's connect and create something amazing together!
+      </p>
+    </Box>
+  </Box>
+</Flex>
+
       </Box>
     </Box>
   );

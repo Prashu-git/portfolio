@@ -7,15 +7,19 @@ import {
   SimpleGrid,
   Text,
   useColorModeValue,
-  useStyleConfig
+  useStyleConfig,
+  
 } from "@chakra-ui/react";
 import routes from "../../routes";
 import Navbar from "../../components/Navbar/Navbar";
 import contactimg from "../../assets/contact.png";
 import contactimg1 from "../../assets/contact1.png";
-import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
-import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { MdPhoneAndroid } from 'react-icons/md';
+import { MdPinDrop } from 'react-icons/md';
+import { FaEnvelope } from 'react-icons/fa';
+
+
 
 export default function Contact() {
   const styles = useStyleConfig("Card");
@@ -57,16 +61,16 @@ export default function Contact() {
             <Box __css={styles}>
               <Box textAlign="center">
                 <Icon
-                  as={FaLocationDot}
+                  as={MdPinDrop}
                   width="30px"
                   height="30px"
                   color="inherit"
                 />
               </Box>
-              <Text textAlign="center">FIND ME @</Text>
-              {/* <Text color={textColorPrimary} textAlign="center" mt="5px">
-                Truminds Software Systems
-              </Text> */}
+              <Text textAlign="center">Location @</Text>
+              <Text color={textColorPrimary} textAlign="center" mt="5px">
+                Bengaluru, Karnataka
+              </Text>
             </Box>
           </Flex>
           <Flex
@@ -85,7 +89,7 @@ export default function Contact() {
                   }}
                 >
                   <Icon
-                    as={AiOutlineMail}
+                    as={FaEnvelope}
                     width="30px"
                     height="30px"
                     color="inherit"
@@ -94,7 +98,7 @@ export default function Contact() {
                 </Link>
               </Box>
 
-              <Text textAlign="center">EMAIL ME @</Text>
+              <Text textAlign="center">Mail @</Text>
 
               <Text color={textColorPrimary} textAlign="center" mt="5px">
                 prashanthpkjb8@gmail.com
@@ -110,13 +114,13 @@ export default function Contact() {
             <Box __css={styles}>
               <Box textAlign="center">
                 <Icon
-                  as={AiFillPhone}
+                  as={MdPhoneAndroid}
                   width="30px"
                   height="30px"
                   color="inherit"
                 />
               </Box>
-              <Text textAlign="center">CONTACT ME @</Text>
+              <Text textAlign="center">Contact @</Text>
               <Text color={textColorPrimary} textAlign="center" mt="5px">
                 +91 8496945779
               </Text>

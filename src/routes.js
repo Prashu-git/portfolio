@@ -2,11 +2,11 @@ import React from "react";
 
 import { Icon } from "@chakra-ui/react";
 import {
-  MdDashboard,
-  MdBarChart,
-  MdPersonPin,
-  MdCode,
-  MdContacts
+  MdHouse,
+  MdDescription,
+  MdSubject,
+  MdAssessment,
+  MdInfoOutline
 } from "react-icons/md";
 
 import Dashboard from "./views/dashboard/dashboard";
@@ -19,36 +19,36 @@ const routes = [
   {
     name: "Home",
     path: "/home",
-    navbarDisplayName: "<Home/>",
-    icon: <Icon as={MdDashboard} width="30px" height="30px" color="inherit" />,
+    navbarDisplayName: "Home",
+    icon: <Icon as={MdHouse} width="30px" height="30px" color="inherit" />,
     component: Dashboard
   },
   {
     name: "About Me",
     path: "/about",
-    navbarDisplayName: "<About Me/>",
-    icon: <Icon as={MdPersonPin} width="30px" height="30px" color="inherit" />,
+    navbarDisplayName: "About Me",
+    icon: <Icon as={MdSubject} width="30px" height="30px" color="inherit" />,
     component: About
   },
   {
     name: "Projects",
     path: "/projects",
-    navbarDisplayName: "<Projects/>",
-    icon: <Icon as={MdCode} width="30px" height="30px" color="inherit" />,
+    navbarDisplayName: "Projects",
+    icon: <Icon as={MdAssessment} width="30px" height="30px" color="inherit" />,
     component: Projects
   },
   {
     name: "Resume",
     path: "/resume",
-    navbarDisplayName: "<Resume/>",
-    icon: <Icon as={MdBarChart} width="30px" height="30px" color="inherit" />,
+    navbarDisplayName: "Resume",
+    icon: <Icon as={MdDescription} width="30px" height="30px" color="inherit" />,
     component: Resume
   },
   {
     name: "Contact Me",
     path: "/contact",
-    navbarDisplayName: "<Contact/>",
-    icon: <Icon as={MdContacts} width="30px" height="30px" color="inherit" />,
+    navbarDisplayName: "Contact",
+    icon: <Icon as={MdInfoOutline} width="30px" height="30px" color="inherit" />,
     component: Contact
   }
 ];

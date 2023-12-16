@@ -10,7 +10,6 @@ import {
 import { AiFillGithub, AiFillHeart } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 import { BiLogoLinkedin } from "react-icons/bi";
-import { SiLeetcode } from "react-icons/si";
 
 export default function Footer() {
   const textColor = useColorModeValue("black", "white");
@@ -60,7 +59,17 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://github.com/Prashu-git" target="blank">
+          <Link
+            href="https://github.com/Prashu-git"
+            target="blank"
+            _hover={{
+              color: "teal.500",
+              boxShadow: "0 0 10px teal, 0 0 20px teal, 0 0 30px teal",
+              transform: "scale(1.2)",
+              transition: "all 0.3s ease"
+            }}
+            fontSize="24px"
+          >
             <AiFillGithub />
           </Link>
         </ListItem>
@@ -72,19 +81,17 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          {/* <Link href="https://leetcode.com/rahul158_/" target="blank">
-            <SiLeetcode />
-          </Link>
-        </ListItem>
-        <ListItem
-          me={{
-            base: "20px",
-            md: "40px"
-          }}
-          opacity="0.6"
-          _hover={{ opacity: 1 }}
-        > */}
-          <Link href="https://www.linkedin.com/in/prashanth-career/" target="blank">
+          <Link
+            href="https://www.linkedin.com/in/prashanth-career/"
+            target="blank"
+            _hover={{
+              color: "blue.500",
+              boxShadow: "0 0 10px blue, 0 0 20px blue, 0 0 30px blue",
+              transform: "scale(1.2)",
+              transition: "all 0.3s ease"
+            }}
+            fontSize="24px"
+          >
             <BiLogoLinkedin />
           </Link>
         </ListItem>
@@ -96,7 +103,17 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://www.instagram.com/_prashanth__kumar__/" target="blank">
+          <Link
+            href="https://www.instagram.com/_prashanth__kumar__/"
+            target="blank"
+            _hover={{
+              color: "purple.500",
+              boxShadow: "0 0 10px purple, 0 0 20px purple, 0 0 30px purple",
+              transform: "scale(1.2)",
+              transition: "all 0.3s ease"
+            }}
+            fontSize="24px"
+          >
             <BsInstagram />
           </Link>
         </ListItem>
