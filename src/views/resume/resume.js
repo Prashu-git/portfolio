@@ -1,7 +1,11 @@
 import React from "react";
 import routes from "../../routes";
 import Navbar from "../../components/Navbar/Navbar";
-import { Box, useStyleConfig, Flex, Button } from "@chakra-ui/react";
+import { Box, useStyleConfig, Flex, Button, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import lightWallpaper from "../../assets/fifteen.jpg";
+import darkWallpaper from "../../assets/seven.jpg";
+
+
 
 export default function Resume() {
   const styles = useStyleConfig("Card");
@@ -18,7 +22,19 @@ export default function Resume() {
       "https://drive.google.com/u/0/uc?id=181stF3kaV966pX5MhJhXAz5sVKd7WQzU&export=download";
   };
 
+
+  const { colorMode } = useColorMode();
+const wallpaper = useColorModeValue(lightWallpaper, darkWallpaper);
+
   return (
+    <Box
+    bgImage={`url(${wallpaper})`}
+    bgSize="cover"
+    bgPosition="center"
+    bgRepeat="no-repeat"
+  >
+    
+    
     <Box>
       <Navbar displayText={getActiveRoute(routes)} />
       <Box pt={{ base: "40px", md: "80px", xl: "80px" }}>
@@ -51,6 +67,7 @@ export default function Resume() {
           </Button>
         </Flex>
       </Box>
+    </Box>
     </Box>
   );
 }
