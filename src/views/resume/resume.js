@@ -1,7 +1,7 @@
 import React from "react";
 import routes from "../../routes";
 import Navbar from "../../components/Navbar/Navbar";
-import { Box, useStyleConfig, Flex, Button, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Box, useStyleConfig, Flex, Button, useColorModeValue } from "@chakra-ui/react";
 import lightWallpaper from "../../assets/fifteen.jpg";
 import darkWallpaper from "../../assets/seven.jpg";
 
@@ -23,51 +23,51 @@ export default function Resume() {
   };
 
 
-  const { colorMode } = useColorMode();
-const wallpaper = useColorModeValue(lightWallpaper, darkWallpaper);
+  const wallpaper = useColorModeValue(lightWallpaper, darkWallpaper);
 
   return (
     <Box
-    bgImage={`url(${wallpaper})`}
-    bgSize="cover"
-    bgPosition="center"
-    bgRepeat="no-repeat"
-  >
-    
-    
-    <Box>
-      <Navbar displayText={getActiveRoute(routes)} />
-      <Box pt={{ base: "40px", md: "80px", xl: "80px" }}>
-        <Flex justifyContent="center" alignItems="center">
-          <Box
-            __css={styles}
-            width={{ base: "100%", md: "70%", xl: "70%" }}
-            height={{ base: "60vh", md: "100vh", xl: "150vh" }}
-            overflow="hidden"
-            borderRadius="md"
-          >
-            <iframe
-              src="https://drive.google.com/file/d/181stF3kaV966pX5MhJhXAz5sVKd7WQzU/preview"
-              title="Resume"
-              width="100%"
-              height="100%"
-              style={{ border: "5px solid", color: "black" }}
-              loading="lazy"
-            ></iframe>
-          </Box>
-        </Flex>
-        <Flex justifyContent="center" alignItems="center" mt="20px">
-          <Button
-            onClick={handleDownload}
-            variant="darkBrand"
-            fontSize="sm"
-            fontFamily="DM Sans"
-          >
-            Download Resume
-          </Button>
-        </Flex>
+      bgImage={`url(${wallpaper})`}
+      bgSize="cover"
+      bgPosition="center"
+      bgRepeat="no-repeat"
+    >
+
+
+      <Box>
+        <Navbar displayText={getActiveRoute(routes)} />
+        <Box pt={{ base: "40px", md: "80px", xl: "80px" }}>
+          <Flex justifyContent="center" alignItems="center">
+            <Box
+              __css={styles}
+              width={{ base: "100%", md: "70%", xl: "70%" }}
+              height={{ base: "60vh", md: "100vh", xl: "150vh" }}
+              overflow="hidden"
+              borderRadius="md"
+            >
+              <iframe
+                src="https://drive.google.com/file/d/181stF3kaV966pX5MhJhXAz5sVKd7WQzU/preview"
+                title="Resume"
+                width="100%"
+                height="100%"
+                style={{ border: "5px solid", color: "black" }}
+                loading="lazy"
+              ></iframe>
+            </Box>
+          </Flex>
+          <Flex justifyContent="center" alignItems="center" mt="40px">
+            <Button
+              onClick={handleDownload}
+              variant="darkBrand"
+              fontSize="sm"
+              fontFamily="Times New Roman"
+            >
+              Download Resume
+
+            </Button>
+          </Flex>
+        </Box>
       </Box>
-    </Box>
     </Box>
   );
 }
