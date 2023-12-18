@@ -14,7 +14,7 @@ import { SideNavResponsive } from "../Sidenav/Sidenav.js";
 export default function Navbar(props) {
   const { displayText } = props;
   const { colorMode, toggleColorMode } = useColorMode();
-  let mainText = useColorModeValue("black", "white");
+  let mainText = useColorModeValue("lightblue.100", "white");
   let navbarPosition = "fixed";
   let navbarFilter = "none";
   let navbarBackdrop = "blur(10px)";

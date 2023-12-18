@@ -5,10 +5,10 @@ import { NavLink, useLocation } from "react-router-dom";
 export default function Content(props) {
   const { routes } = props;
   let currentlocation = useLocation();
-  let activeColor = useColorModeValue("black", "blue");
+  let activeColor = useColorModeValue("black", "lightblue.100");
 
-  let activeIcon = useColorModeValue("black", "blue");
-  let textColor = useColorModeValue("blue", "white");
+  let activeIcon = useColorModeValue("black", "lightblue.100");
+  let textColor = useColorModeValue("lightblue.100", "white");
 
   const activeRoute = (routeName) => {
     return currentlocation.pathname.includes(routeName);
@@ -55,7 +55,6 @@ export default function Content(props) {
                 {route.name}
               </Box>
             </Flex>
-            
           </HStack>
         </Box>
       </NavLink>

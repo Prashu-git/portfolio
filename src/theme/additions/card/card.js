@@ -9,12 +9,10 @@ const Card = {
     borderRadius: "20px",
     minWidth: "0px",
     wordWrap: "break-word",
-    bg: mode("secondaryGray.400", "grey")(props),
-    // border: "1.5px solid",
-    // borderColor: mode("lightblue.100", "lightpeach.100")(props),
+    bg: mode("secondaryGray.400", "grey.400")(props),
     backgroundClip: "border-box",
     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)"
-    
+
   })
 };
 

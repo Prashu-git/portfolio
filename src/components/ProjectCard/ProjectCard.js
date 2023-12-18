@@ -40,8 +40,7 @@ export default function ProjectCard(props) {
           borderRadius="10px"
           p="20px"
           effect="blur"
-          // border="2px solid"
-          // borderColor={textColor}
+
         />
       </Box>
       <Flex flexDirection="column" justify="center" h="100%">
@@ -79,6 +78,7 @@ export default function ProjectCard(props) {
         </Flex>
         <Flex direction="row" align="center" justify="Center">
           <Text
+            fontFamily={"Times New Roman"}
             color={textColor}
             fontSize={{
               base: "sm"
@@ -121,7 +121,7 @@ export default function ProjectCard(props) {
                 <Button
                   variant="darkBrand"
                   fontSize="sm"
-                  fontFamily="DM Sans"
+                  fontFamily="Times New Roman"
                   borderRadius="70px"
                   px="24px"
                   py="5px"
@@ -147,7 +147,7 @@ export default function ProjectCard(props) {
             <Button
               variant="darkBrand"
               fontSize="sm"
-              fontFamily="DM Sans"
+              fontFamily="Times New Roman"
               borderRadius="70px"
               px="24px"
               py="5px"

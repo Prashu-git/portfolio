@@ -8,30 +8,25 @@ import {
   Flex,
   Icon,
   Stack,
-  useColorMode,
   useColorModeValue,
   useDisclosure
-} from "@chakra-ui/react";
+}
+
+  from "@chakra-ui/react";
 import React from "react";
 import { IoMenuOutline } from "react-icons/io5";
-import GitHubButton from "react-github-btn";
 import Content from "./Content";
-import sidenavDark from "../../assets/sidenavDark.png";
-import sidenavLight from "../../assets/sidenavLight.png";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Sidenav(props) {
-  const { colorMode } = useColorMode();
   const { routes } = props;
   let variantChange = "0.2s linear";
   let shadow = useColorModeValue(
     "14px 17px 40px 4px rgba(112, 144, 176, 0.08)",
     "14px 17px 40px 4px rgba(112, 144, 176, 0.08)"
   );
-  // Chakra Color Mode
-  // let sidenavBg = useColorModeValue("secondaryGray.400", "navyBlue.300");
-  // let navbarBorderColor = useColorModeValue("lightblue.100", "lightpeach.100");
+
 
   return (
     <Box
@@ -41,7 +36,6 @@ export default function Sidenav(props) {
       minH="100%"
     >
       <Box
-        // bg={sidenavBg}
         transition={variantChange}
         w="300px"
         h="100vh"
@@ -56,17 +50,7 @@ export default function Sidenav(props) {
           px="15px"
           borderRadius="30px"
         >
-          {/* <Flex align="center" direction="column" fontSize="20px">
-            {colorMode === "light" ? (
-              <>
-                <LazyLoadImage src={sidenavLight} effect="blur"></LazyLoadImage>
-              </>
-            ) : (
-              <>
-                <LazyLoadImage src={sidenavDark} effect="blur"></LazyLoadImage>
-              </>
-            )}
-          </Flex> */}
+
 
           <Stack direction="column" mb="30px" mt="20px">
             <Box ps="15px" pe={{ md: "16px", "2xl": "1px" }}>
@@ -81,25 +65,7 @@ export default function Sidenav(props) {
             justifyContent="center"
             alignItems="center"
           >
-            {/* <GitHubButton
-              href="https://github.com/"
-              data-color-scheme="no-preference: light; light: light; dark: dark_dimmed;"
-              data-icon="octicon-star"
-              data-size="large"
-              aria-label="Star Rahul1582/portfolio-rahulkp on GitHub"
-            >
-              Star
-            </GitHubButton> */}
 
-            {/* <GitHubButton
-              href="https://github.com/"
-              data-color-scheme="no-preference: light; light: light; dark: dark_dimmed;"
-              data-icon="octicon-repo-forked"
-              data-size="large"
-              aria-label="Fork Rahul1582/portfolio-rahulkp on GitHub"
-            >
-              Fork
-            </GitHubButton> */}
           </Flex>
         </Flex>
       </Box>
@@ -108,7 +74,6 @@ export default function Sidenav(props) {
 }
 
 export function SideNavResponsive(props) {
-  const { colorMode } = useColorMode();
   let sidenavBg = useColorModeValue("white", "black");
   let navbarBorderColor = useColorModeValue("black", "white");
   let variantChange = "0.2s linear";
@@ -169,23 +134,7 @@ export function SideNavResponsive(props) {
                 px="15px"
                 borderRadius="30px"
               >
-                {/* <Flex align="center" direction="column" fontSize="20px">
-                  {colorMode === "light" ? (
-                    <>
-                      <LazyLoadImage
-                        src={sidenavLight}
-                        effect="blur"
-                      ></LazyLoadImage>
-                    </>
-                  ) : (
-                    <>
-                      <LazyLoadImage
-                        src={sidenavDark}
-                        effect="blur"
-                      ></LazyLoadImage>
-                    </>
-                  )}
-                </Flex> */}
+
 
                 <Stack direction="column" mb="30px" mt="20px">
                   <Box
@@ -203,25 +152,6 @@ export function SideNavResponsive(props) {
                   justifyContent="center"
                   alignItems="center"
                 >
-                  {/* <GitHubButton
-                    href="https://github.com/"
-                    data-color-scheme="no-preference: light; light: light; dark: dark_dimmed;"
-                    data-icon="octicon-star"
-                    data-size="large"
-                    aria-label="Star Rahul1582/portfolio-rahulkp on GitHub"
-                  >
-                    Star
-                  </GitHubButton> */}
-
-                  {/* <GitHubButton
-                    href="https://github.com/"
-                    data-color-scheme="no-preference: light; light: light; dark: dark_dimmed;"
-                    data-icon="octicon-repo-forked"
-                    data-size="large"
-                    aria-label="Fork Rahul1582/portfolio-rahulkp on GitHub"
-                  >
-                    Fork
-                  </GitHubButton> */}
                 </Flex>
               </Flex>
             </Box>

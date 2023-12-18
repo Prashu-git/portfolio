@@ -7,7 +7,7 @@ import {
   Text,
   useColorModeValue
 } from "@chakra-ui/react";
-import { AiFillGithub, AiFillHeart } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 import { BiLogoLinkedin } from "react-icons/bi";
 
