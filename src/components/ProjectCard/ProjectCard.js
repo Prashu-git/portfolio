@@ -20,7 +20,7 @@ export default function ProjectCard(props) {
     projectLiveLink,
     projectLink
   } = props;
-  const textColor = useColorModeValue("blue", "black");
+  const textColor = useColorModeValue("lightblue.100", "black");
   const styles = useStyleConfig("Card");
   return (
     <Box

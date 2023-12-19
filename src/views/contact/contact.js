@@ -20,7 +20,7 @@ import darkWallpaper from "../../assets/seven.jpg";
 
 export default function Contact() {
   const styles = useStyleConfig("Card");
-  const textColorPrimary = useColorModeValue("blue", "black");
+  const textColorPrimary = useColorModeValue("lightblue.100", "black");
 
   const getActiveRoute = (routes) => {
     for (let i = 0; i < routes.length; i++) {
