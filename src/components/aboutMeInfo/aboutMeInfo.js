@@ -30,5 +30,6 @@ export default function AboutMeInfo(props) {
         </Text>
       </Box>
     </Box>
+    
   );
 }

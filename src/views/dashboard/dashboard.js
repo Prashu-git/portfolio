@@ -106,18 +106,19 @@ export default function Dashboard() {
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                mt={{ base: "10px", lg: "20px" }}
+                mt={{ base: "10px", lg: "15px" }}
 
               >
               </Flex>
             </Grid>
           </Flex>
 
-          <Flex direction="column" justifyContent="center" alignItems="center" pt="300px">
+          <Flex direction="column" justifyContent="center" alignItems="center" pt="290px" pl={"10px"} pr={"10px"}>
             <Box
 
               __css={styles}
               border="none"
+
               textAlign="center"
               cursor="default"
               mt="20px"
@@ -135,6 +136,7 @@ export default function Dashboard() {
               </Box>
             </Box>
           </Flex>
+          <br/>
         </Box>
       </Box>
     </Box>

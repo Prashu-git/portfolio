@@ -166,10 +166,12 @@ export default function About() {
             mb="20px"
             align={{ base: "center", xl: "center" }}
             justify={{ base: "center", xl: "center" }}
+            pr={"10px"}
+            pl={"10px"}
           >
 
             <Box __css={styles}>
-              <Box textAlign="center">
+              <Box textAlign="center" >
                 <Icon
                   as={FaVolleyballBall}
                   width="30px"
@@ -212,8 +214,7 @@ export default function About() {
             </Box>
 
           </SimpleGrid>
-
-
+          <br />
         </Box>
       </Box>
     </Box>

@@ -53,6 +53,8 @@ export default function Projects() {
             alignItems="center"
             justifyContent="center"
             fontFamily={"Times New Roman"}
+            pr={"10px"}
+            pl={"10px"}
           >
             <ProjectCard
               projectImage={sarvang}
@@ -89,7 +91,7 @@ export default function Projects() {
             />
 
           </SimpleGrid>
-
+<br/>
         </Box>
       </Box>
     </Box>

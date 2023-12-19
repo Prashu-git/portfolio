@@ -61,11 +61,13 @@ export default function Resume() {
               variant="darkBrand"
               fontSize="sm"
               fontFamily="Times New Roman"
+              fontWeight={"thin"}
             >
               Download Resume
 
             </Button>
           </Flex>
+          <br/>
         </Box>
       </Box>
     </Box>

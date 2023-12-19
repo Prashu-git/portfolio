@@ -20,7 +20,6 @@ export default function Navbar(props) {
   let navbarBackdrop = "blur(10px)";
   let navbarShadow = "none";
   let navbarBg = useColorModeValue("rgba(244, 247, 254, 0.2)", "");
-  // let navbarBorderColor = useColorModeValue("navy.700", "white");
   let secondaryMargin = "0px";
   let paddingX = "15px";
   let gap = "0px";

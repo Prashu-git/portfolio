@@ -49,6 +49,8 @@ export default function Contact() {
             mb="20px"
             align={{ base: "center", xl: "center" }}
             justify={{ base: "center", xl: "center" }}
+            pr={"10px"}
+            pl={"10px"}
           >
             <Flex
               direction="column"
@@ -123,6 +125,7 @@ export default function Contact() {
               </Box>
             </Flex>
           </SimpleGrid>
+          <br/>
         </Box>
       </Box>
     </Box>

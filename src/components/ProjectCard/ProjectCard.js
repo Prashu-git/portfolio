@@ -122,6 +122,7 @@ export default function ProjectCard(props) {
                   variant="darkBrand"
                   fontSize="sm"
                   fontFamily="Times New Roman"
+                  fontWeight={"thin"}
                   borderRadius="70px"
                   px="24px"
                   py="5px"
@@ -148,6 +149,7 @@ export default function ProjectCard(props) {
               variant="darkBrand"
               fontSize="sm"
               fontFamily="Times New Roman"
+              fontWeight={"thin"}
               borderRadius="70px"
               px="24px"
               py="5px"
