@@ -1,13 +1,14 @@
+// App.js
 import "./App.css";
+import { HashRouter as Router } from "react-router-dom";
 import Sidenav from "./components/Sidenav/Sidenav";
 import Footer from "./components/Footer/Footer";
 import routes from "./routes.js";
 import { Box, useColorMode } from "@chakra-ui/react";
 import {
-  BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 
 export default function App() {
@@ -29,16 +30,18 @@ export default function App() {
       const style = {
         left: `${Math.random() * 100}%`,
         top: `${Math.random() * 100}%`,
-        animationDelay: `${Math.random() * 5}s`
+        animationDelay: `${Math.random() * 5}s`,
       };
 
-      const starClassName = colorMode === "light" ? "star-black" : "star-white";
+      const starClassName =
+        colorMode === "light" ? "star-black" : "star-white";
 
       stars.push(<div key={i} className={starClassName} style={style}></div>);
     }
 
     return <div className="starry-background">{stars}</div>;
   };
+
   return (
     <Router>
       <StarryBackground />
@@ -66,7 +69,8 @@ export default function App() {
         >
           <Routes>
             {redirectRoute(routes)}
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route exact path="/" element={<Navigate to="/home" replace />} />
+            <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </Box>
         <Box>
