@@ -66,7 +66,7 @@ export default function App() {
         >
           <Routes>
             {redirectRoute(routes)}
-            <Route path="*" element={<Navigate to="/home" replace />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Box>
         <Box>

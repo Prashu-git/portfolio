@@ -125,7 +125,7 @@ export default function Contact() {
               </Box>
             </Flex>
           </SimpleGrid>
-          <br/>
+          <br />
         </Box>
       </Box>
     </Box>

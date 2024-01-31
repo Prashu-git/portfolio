@@ -82,9 +82,9 @@ export default function Dashboard() {
                       color={textColor}
                       mt="20px"
                     >
-                      I am{" "}
+                      My name is{" "}
                       <Text display="inline-flex" color={highlightTextColor}>
-                        Prashanth Kumar R.
+                        Prashanth,
                       </Text>
                     </Text>
 
@@ -94,9 +94,9 @@ export default function Dashboard() {
                       color={textColor}
                       mt="20px"
                     >
-                      I am a{" "}
+                      I am a {" "}
                       <Text display="inline-flex" color={highlightTextColor}>
-                        Software Developer.
+                        Developer.
                       </Text>
                     </Text>
                   </Box>
@@ -124,19 +124,18 @@ export default function Dashboard() {
               mt="20px"
             >
               <Box
-
                 fontSize={{ sm: "1em", md: "1.3em", xl: "1.3em" }}
                 fontFamily="Tims New Reoman"
                 color={"black"}
                 cursor="default"
               >
                 <p>
-                  Hello! I'm Prashanth, a developer from Bangalore, India. My enthusiasm for learning is boundless—I thrive on exploring new technologies and methodologies to remain at the industry's forefront. Collaboration and teamwork are my driving forces. I deeply value personal projects, whether they involve contributing to open source initiatives or working on my own tech ventures. I'm eager to contribute my skills and dedication to the dynamic tech landscape. Let's connect and create something amazing together!
+                  Hello! I'm Prashanth, a developer from Bangalore, India. My enthusiasm for learning is boundless I thrive on exploring new technologies and methodologies to remain at the industry's forefront. Collaboration and teamwork are my driving forces. I deeply value personal projects, whether they involve contributing to open source initiatives or working on my own tech ventures. I'm eager to contribute my skills and dedication to the dynamic tech landscape. Let's connect and create something amazing together!
                 </p>
               </Box>
             </Box>
           </Flex>
-          <br/>
+          <br />
         </Box>
       </Box>
     </Box>

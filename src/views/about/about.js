@@ -12,8 +12,8 @@ import {
 
 
   from "@chakra-ui/react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import myphoto from "../../assets/aboutMePhoto.jpeg";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+// import myphoto from "../../assets/Portfolio.jpeg";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Navbar from "../../components/Navbar/Navbar";
 import routes from "../../routes";
@@ -63,7 +63,7 @@ export default function About() {
             mb="40px"
           >
 
-            <Grid
+<Grid
               templateColumns={{
                 base: "1fr",
                 lg: "1.34fr 1.62fr"
@@ -73,10 +73,15 @@ export default function About() {
               }}
               gap={{ base: "20px", xl: "20px" }}
             >
-              <Box
+              <Flex  // Outer Flex for centering
+                direction="column"
+                alignItems="center"
+                justifyContent="center"
+              />
+              {/* <Box
                 position="relative"
                 w={{ base: "100%", "3xl": "100%" }}
-                h={{ base: "100%", "3xl": "250px" }}
+                h={{ base: "100%", "4xl": "250px" }}
                 borderRadius="20px"
                 p="20px"
                 overflow="hidden"
@@ -99,22 +104,23 @@ export default function About() {
                   effect="blur"
                   style={{ height: "100%" }}
                 />
-              </Box>
+              </Box> */}
               <Flex
-                direction="column"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <Box __css={styles} border="none" bg="transparent">
-                  <Text
-                    color={textColorPrimary}
-                    fontSize="2xl"
-                    mb="40px"
-                    textAlign="center"
-                  >
-                    <span style={{ fontFamily: 'Times New Roman', fontWeight: 'bold' }}>GENERAL INFORMATION</span>
-                  </Text>
-                  <SimpleGrid columns="2" gap="20px">
+  direction="column"
+  alignItems="center"
+  justifyContent="center"
+  marginLeft={{ base: 0, md: -350 }}
+>
+  <Box __css={styles} border="none" bg="transparent">
+    <Text
+      color={textColorPrimary}
+      fontSize={{ base: "xl", md: "2xl" }}
+      mb={{ base: "20px", md: "40px" }}
+      textAlign="center"
+    >
+      <span style={{ fontFamily: 'Times New Roman', fontWeight: 'bold' }}>GENERAL INFORMATION</span>
+    </Text>
+    <SimpleGrid columns={{ base: 1, md: 2 }} gap="20px">
 
                     <AboutMeInfo
                       boxShadow={cardShadow}
@@ -149,6 +155,7 @@ export default function About() {
               </Flex>
             </Grid>
           </Flex>
+          
           <Flex
             direction="row"
             justifyContent="center"
@@ -160,6 +167,7 @@ export default function About() {
               {"MY INTERESTS AND HOBBIES"}
             </Text>
           </Flex>
+        
           <SimpleGrid
             columns={{ base: 1, xl: 3, "2xl": 3 }}
             gap="20px"

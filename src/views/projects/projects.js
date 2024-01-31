@@ -58,7 +58,7 @@ export default function Projects() {
           >
             <ProjectCard
               projectImage={sarvang}
-              projectName={"Simple Static Website"}
+              projectName={"Static Website"}
               aboutProject={"Therapy website used for marketing "}
               techStack={"NODE JS, REACT JS, TAILWIND CSS, MONGODB, HTML5, ThailwindCSS, CSS, JavaScript"}
               projectLiveLink="https://6524eea44e91d421e351ac92--tangerine-selkie-22acb2.netlify.app/"
@@ -75,7 +75,7 @@ export default function Projects() {
             <ProjectCard
               projectImage={eyes}
               projectName={"CCTV"}
-              aboutProject={"Official website for the clint"}
+              aboutProject={"Official website for client"}
               techStack={
                 " NODE JS, REACT JS, Java, HTML5, CSS, JavaScript"}
               projectLiveLink="https://cctv-prashanths-projects-7db0adae.vercel.app/"
@@ -83,7 +83,7 @@ export default function Projects() {
             />
             <ProjectCard
               projectImage={aim}
-              projectName={"Construction Website"}
+              projectName={"Construction based Website"}
               aboutProject={"Construction of any type of projects in the industary"}
               techStack={"HTML5, CSS, JavaScript, Java, MySQL"}
               projectLiveLink="https://aimconstruction.netlify.app/"
@@ -91,7 +91,7 @@ export default function Projects() {
             />
 
           </SimpleGrid>
-<br/>
+          <br />
         </Box>
       </Box>
     </Box>
